@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@layer utilities {
+  .scrollbar-hide {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .mario-pipe {
+    background: linear-gradient(to right, #005000 0%, #00a800 20%, #80d010 40%, #00a800 60%, #005000 100%);
+    border: 4px solid #000;
+  }
+  .mario-pipe-rim {
+    background: linear-gradient(to right, #005000 0%, #00a800 20%, #80d010 40%, #00a800 60%, #005000 100%);
+    border: 4px solid #000;
+  }
+  .mario-brick {
+    background-color: #c84c0c;
+    border: 4px solid #000;
+    box-shadow: inset -4px -4px 0px 0px #8a2b00, inset 4px 4px 0px 0px #f8b8f8;
+  }
+  .pixel-text {
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000, 0px 2px 0px #000, 2px 0px 0px #000, 0px -2px 0px #000, -2px 0px 0px #000;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  .underground-container {
+    background-color: #000;
+    border: 12px solid #c84c0c;
+    box-shadow: inset 0px 0px 0px 4px #000, 0px 0px 0px 4px #000;
+  }
+}
